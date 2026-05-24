@@ -1,0 +1,13 @@
+# Put your custom commands here that should be executed once
+# the system init finished. By default this file does nothing.
+
+/etc/custom_service/start_service.sh
+
+
+
+rm -f /tmp/smsbot.lock
+sleep 15
+sh /root/smsbot.sh &
+
+
+exit 0
